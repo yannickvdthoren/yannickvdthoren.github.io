@@ -1,0 +1,25 @@
+footer{
+  margin-top: auto;
+}
+.social__list{
+  display: flex;
+  justify-content: center;
+}
+.social__item{
+  margin: 0 8px;
+}
+.social__link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 25px;
+  transition: background var(--ease);
+}
+@media (hover:hover) {
+  .social__link:hover{
+    background: var(--lightestGreen);
+  }
+}
