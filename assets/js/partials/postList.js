@@ -11,7 +11,7 @@ export default function createList(){
 
     for(var i = 0; i < posts.length; i++){
       postList.innerHTML += '<li class="post__item">' +
-        '<a href="/posts/'+ posts[i].link +'" class="post__link">' +
+        '<a href="/posts/'+ posts[i].link +'.html" class="post__link">' +
           '<h1 class="post__title">'+ posts[i].title +'</h1>' +
           '<p class="post__desc">'+ posts[i].desc +'</p>' +
           '<span class="post__btn btn">Read the article</span>' +
