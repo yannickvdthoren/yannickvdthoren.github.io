@@ -1,3 +1,7 @@
-import loaded from './partials/load.js';
+import createList from './partials/postList.js';
 
-loaded();
+window.onload = function(){
+  if (window.location.pathname == "/"){
+    createList();
+  };
+};
