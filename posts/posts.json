@@ -2,10 +2,10 @@
   "posts": {
     "post": [
       {
-        "id": "0",
-        "date": "15 Jan. 2021",
+        "tags": "Introduction",
+        "date": "22 Jan. 2021",
         "title": "Simple blog design to begin.",
-        "desc": "I wanted to begin simply and carry on adding stuff to the blog in the time I learn new technics and I know what design I want to do. Learn about the structure and the code here.",
+        "desc": "It make some times that I wanted to come back in the blogging and the whole personal website game but… you know… you have to choose the right platform, the right design, etc… ",
         "link": "simple-blog-design"
       }
     ]
