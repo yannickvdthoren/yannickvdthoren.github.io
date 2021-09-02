@@ -2,9 +2,9 @@
   <footer>
     <h2>Drop me a message.</h2>
     <p>
-      If you want to hire me for a project, chat with me about music, art or
-      else, or get a coffee, feel free to send me a message via
-      <a href="https://twitter.com/yannickvdthoren">twitter</a> or by
+      If you want to tell me about your project, chat about art or coffee, send
+      me a message via
+      <a href="https://twitter.com/yannickvdthoren">twitter</a> or
       <a href="mailto:yannickvdthoren@gmail.com">email</a>.
     </p>
     <ul class="social">

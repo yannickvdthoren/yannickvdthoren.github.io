@@ -3,10 +3,12 @@
     <h1>Yannick Vandenthoren.</h1>
     <p>
       I’m a passionate <strong>UX/UI Designer</strong> and
-      <strong>Front-end Developper</strong> (working to become a fullstack). I
-      mainly worked with companies that were doing a total redesign of their
-      website and needed help redoing the architecture of the whole app or just
-      the style parts.
+      <strong>Full Stack Developper</strong> adept at unlocking the full
+      potential of my clients - often in dire need of a great design, a solid UX
+      or even a full redesign. See
+      <a href="https://www.linkedin.com/in/yannickvdthoren/#ember721"
+        >what they say about my work</a
+      >.
     </p>
   </header>
 </template>

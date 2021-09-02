@@ -22,7 +22,51 @@ linkedin: company/letelegramme
 linkedinURL: https://www.linkedin.com/company/letelegramme/
 images:
  [
-    
+    {
+      id: 0,
+      url: /letelegramme/le-telegramme-article.jpeg,
+      alt: 'The article page of the website of Le Télégramme',
+    },
+    {
+      id: 1,
+      url: /letelegramme/le-telegramme-boutique.jpeg,
+      alt: 'The new boutique created for le Télégramme',
+    },
+    {
+      id: 2,
+      url: /letelegramme/le-telegramme-compte.jpeg,
+      alt: 'The account design of the customer of Le Télégramme.',
+    },
+    {
+      id: 3,
+      url: /letelegramme/le-telegramme-dataspot.jpeg,
+      alt: 'The redesign of the Dataspot section of Le Télégramme.',
+    },
+    {
+      id: 4,
+      url: /letelegramme/le-telegramme-details.jpeg,
+      alt: 'The details screen of the hiking app.',
+    },
+    {
+      id: 5,
+      url: /letelegramme/le-telegramme-rando.jpeg,
+      alt: 'The homepage of the hiking app.',
+    },
+    {
+      id: 6,
+      url: /letelegramme/le-telegramme-refont.jpeg,
+      alt: 'The new design of the website on mobile.',
+    },
+    {
+      id: 7,
+      url: /letelegramme/le-telegramme-videos.jpeg,
+      alt: 'The new design of the website on desktop.',
+    },
+    {
+      id: 8,
+      url: /letelegramme/mer-et-marine-refonte.jpeg,
+      alt: 'A new design test for the website of Mer et Marine.',
+    },
   ]
 color: red
 ---
