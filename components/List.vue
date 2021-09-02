@@ -72,6 +72,7 @@
               <img
                 :src="require(`~/assets/images${image.url}`)"
                 :alt="image.alt"
+                loading="lazy"
               />
             </picture>
           </li>
