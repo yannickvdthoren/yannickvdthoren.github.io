@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Generate page
-        run: npm run generate
+        run: yarn run generate
 
       # Runs a set of commands using the runners shell
       - name: Deploy
