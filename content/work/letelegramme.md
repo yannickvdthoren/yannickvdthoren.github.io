@@ -54,12 +54,12 @@ images:
     },
     {
       id: 6,
-      url: /letelegramme/le-telegramme-refont.jpeg,
+      url: /letelegramme/le-telegramme-refont.jpg,
       alt: 'The new design of the website on mobile.',
     },
     {
       id: 7,
-      url: /letelegramme/le-telegramme-videos.jpeg,
+      url: /letelegramme/le-telegramme-videos.jpg,
       alt: 'The new design of the website on desktop.',
     },
     {
