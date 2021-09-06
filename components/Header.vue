@@ -3,7 +3,7 @@
     <h1>Yannick Vandenthoren.</h1>
     <p>
       I’m a passionate <strong>UX/UI Designer</strong> and
-      <strong>Full Stack Developper</strong> adept at unlocking the full
+      <strong>Full Stack Developer</strong> adept at unlocking the full
       potential of my clients - often in dire need of a great design, a solid UX
       or even a full redesign. See
       <a href="https://www.linkedin.com/in/yannickvdthoren/#ember721"
