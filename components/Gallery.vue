@@ -174,8 +174,8 @@ ul svg {
 @media (min-width: 601px) and (max-width: 900px) {
   .desktop__gallery ul,
   .desktop__gallery ul svg {
-    width: 600px;
-    height: 408px;
+    width: 550px;
+    height: 364px;
   }
 }
 </style>
