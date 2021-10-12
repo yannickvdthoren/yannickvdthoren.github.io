@@ -162,7 +162,7 @@ ul svg {
     height: 218px;
   }
 }
-@media screen and (max-width: 900px) {
+@media (min-width: 601px) and (max-width: 900px) {
   .desktop__gallery ul,
   .desktop__gallery ul svg {
     width: 600px;
