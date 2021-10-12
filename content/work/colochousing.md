@@ -1,7 +1,8 @@
 ---
 position: 0
-suptitle: Jan 2021 - Today 
+suptitle: Oct 2018 - Oct 2019 <br /> & Jan 2021 - Oct 2021 
 title: Coloc Housing
+project: coloc_housing
 role: UI/UX Designer and Full-Stack developer
 description: Coloc Housing manage shared house in Belgium
 mission: 'The website allows people to search and find a shared house in Belgium and then applying in the house. The roomies can then vote for the applicants and, if he is accepted, he can come and live with them in the house.
@@ -11,45 +12,68 @@ mission: 'The website allows people to search and find a shared house in Belgium
 <br />Besides that, I was also in charge of coding the new dashboard and setting up the roadmap and the strategy for the new website : Functionalities, the technology to use, etc…'
 website: colochousing.com
 websiteURL: https://www.colochousing.com/
-social: true
-fb: colochousing
-fbURL: https://www.facebook.com/ColocHousing/
-instagram: colochousing
-instagramURL: https://www.instagram.com/colochousing/
-linkedin: company/colochousing
-linkedinURL: https://www.linkedin.com/company/colochousing/
-images:
- [
-    {
-      id: 0,
-      url: /colochousing/colochousing-application.jpeg,
-      alt: 'The application screen of colochousing.',
-    },
-    {
-      id: 1,
-      url: /colochousing/colochousing-chat.jpeg,
-      alt: 'The chat mobile app',
-    },
-    {
-      id: 2,
-      url: /colochousing/colochousing-dashboard-2.jpeg,
-      alt: 'The owner dashboard of coloc housing.',
-    },
-    {
-      id: 3,
-      url: /colochousing/colochousing-room.jpeg,
-      alt: 'The screen presenting the room of coloc housing and your contract.',
-    },
-    {
-      id: 4,
-      url: /colochousing/colochousing-dashboard.jpeg,
-      alt: 'The owner dashboard of coloc housing.',
-    },
-    {
-      id: 4,
-      url: /colochousing/colochousing-search.jpeg,
-      alt: 'The search screen on mobile.',
-    },
-  ]
-color: cyan
+mobile: [
+  {
+    id: 0,
+    url: /colochousing/homepage-mob.jpg,
+    urlx2: /colochousing/homepage-mobx2.jpg,
+    alt: 'Colochousing homepage design',
+  },
+  {
+    id: 1,
+    url: /colochousing/chat.jpg,
+    urlx2: /colochousing/chatx2.jpg,
+    alt: 'Exemple of chat between the roomies',
+  },
+  {
+    id: 2,
+    url: /colochousing/contract-mob.jpg,
+    urlx2: /colochousing/contract-mobx2.jpg,
+    alt: "Roomie's contract view in his dashboard",
+  },
+  {
+    id: 3,
+    url: /colochousing/vote-mob.jpg,
+    urlx2: /colochousing/vote-mobx2.jpg,
+    alt: "Proposition for the voting system",
+  }
+]
+desktop: [
+  {
+    id: 0,
+    url: /colochousing/homepage.jpg,
+    urlx2: /colochousing/homepagex2.jpg,
+    alt: 'Colochousing homepage design',
+  },
+  {
+    id: 1,
+    url: /colochousing/activity.jpg,
+    urlx2: /colochousing/activityx2.jpg,
+    alt: 'Activity from the coloc displayed in the Dashboard from Coloc housing',
+  },
+  {
+    id: 2,
+    url: /colochousing/calendar.jpg,
+    urlx2: /colochousing/calendarx2.jpg,
+    alt: 'Calendar showcasing the next event happening in the houses',
+  },
+  {
+    id: 3,
+    url: /colochousing/contract.jpg,
+    urlx2: /colochousing/contractx2.jpg,
+    alt: "Roomie's rent view in his dashboard",
+  },
+  {
+    id: 4,
+    url: /colochousing/dashboard.jpg,
+    urlx2: /colochousing/dashboardx2.jpg,
+    alt: "Property manager dashboard",
+  },
+  {
+    id: 5,
+    url: /colochousing/vote.jpg,
+    urlx2: /colochousing/votex2.jpg,
+    alt: "Proposition for the voting system",
+  }
+]
 ---

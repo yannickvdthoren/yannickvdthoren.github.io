@@ -1,89 +1,76 @@
 <template>
   <ul>
-    <li v-for="article of articles" :key="article.slug" class="grid">
-      <div class="title">
-        <h4
-          v-if="article.suptitle"
-          :style="{ color: 'var(--' + article.color + ')' }"
-        >
-          {{ article.suptitle }}
-        </h4>
-        <h3>{{ article.title }}</h3>
-      </div>
+    <li v-for="article of articles" :key="article.slug" class="grid article">
+      <input
+        type="radio"
+        :name="'gallery' + article.slug"
+        :id="'mob' + article.slug"
+        class="mobile__input"
+        checked
+        hidden
+      />
+      <input
+        type="radio"
+        :name="'gallery' + article.slug"
+        :id="'des' + article.slug"
+        class="desktop__input"
+        hidden
+      />
+
       <div class="description">
-        <h4
-          v-if="article.role"
-          :style="{ color: 'var(--' + article.color + ')' }"
-        >
-          Role
-        </h4>
-        <p v-if="article.role" class="role margin">{{ article.role }}</p>
+        <div class="left">
+          <h4 v-if="article.suptitle" v-html="article.suptitle"></h4>
+          <h2 :class="{ website: article.website }">{{ article.title }}</h2>
 
-        <h4 :style="{ color: 'var(--' + article.color + ')' }">Description</h4>
-        <p class="margin">{{ article.description }}</p>
+          <p v-if="article.website" class="website">
+            <a :href="article.websiteURL">{{ article.website }}</a>
+          </p>
 
-        <h4
-          :style="{ color: 'var(--' + article.color + ')' }"
-          v-if="article.mission"
-        >
-          Mission
-        </h4>
-        <p v-html="article.mission" v-if="article.mission"></p>
+          <h3 v-if="article.role">Role</h3>
+          <p v-if="article.role" class="role margin">{{ article.role }}</p>
+
+          <h3>Description</h3>
+          <p class="margin">{{ article.description }}</p>
+        </div>
+        <div class="right">
+          <h3 v-if="article.mission">Mission</h3>
+          <p v-html="article.mission" v-if="article.mission"></p>
+        </div>
       </div>
-      <div class="details">
-        <h4
-          v-if="article.website"
-          :style="{ color: 'var(--' + article.color + ')' }"
-        >
-          Website
-        </h4>
-        <a :href="article.websiteURL" v-if="article.website">
-          {{ article.website
-          }}<Link :style="{ color: 'var(--' + article.color + ')' }" />
-        </a>
 
-        <h4
-          v-if="article.social == true"
-          class="social__title"
-          :style="{ color: 'var(--' + article.color + ')' }"
-        >
-          Social
-        </h4>
-        <ul v-if="article.social == true" class="social">
-          <li v-if="article.fb">
-            <a :href="article.fbURL"> <Facebook /> {{ article.fb }}</a>
-          </li>
-          <li v-if="article.instagram">
-            <a :href="article.instagramURL">
-              <Instagram /> {{ article.instagram }}
-            </a>
-          </li>
-          <li v-if="article.linkedin">
-            <a :href="article.linkedinURL">
-              <Linkedin /> {{ article.linkedin }}
-            </a>
-          </li>
-        </ul>
-      </div>
       <div class="gallery">
-        <ul>
-          <li v-for="image in article.images" :key="image.id">
-            <picture>
-              <img
-                :src="require(`~/assets/images${image.url}`)"
-                :alt="image.alt"
-                loading="lazy"
-              />
-            </picture>
-          </li>
-        </ul>
+        <Gallery
+          :images="article.mobile"
+          :company="article.project"
+          type="mobile"
+          v-if="article.mobile"
+        />
+        <Gallery
+          :images="article.desktop"
+          :company="article.project"
+          type="desktop"
+          v-if="article.desktop"
+        />
+        <!-- to do with labels and inputs -->
+        <div class="gallery__ctrls" v-if="article.desktop && article.mobile">
+          <label :for="'mob' + article.slug" class="mobile__btn">
+            <MobileIcon /> Mobile
+          </label>
+          <label :for="'des' + article.slug" class="desktop__btn">
+            <DesktopIcon /> Dekstop
+          </label>
+        </div>
       </div>
     </li>
   </ul>
 </template>
 <script>
+import Gallery from '@/components/Gallery'
 export default {
   name: 'list',
+  components: {
+    Gallery,
+  },
   props: {
     articles: {
       type: Array,
@@ -93,82 +80,94 @@ export default {
 </script>
 <style scoped>
 .grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 24px 16px;
-  grid-template-areas:
-    'title description description description'
-    'details gallery gallery gallery';
-  margin-bottom: 64px;
+  min-height: 100vh;
+  place-items: center;
 }
-@media screen and (max-width: 600px) {
-  .grid {
-    grid-template-columns: 1fr;
-    grid-template-areas: 'title' 'details' 'description' 'gallery';
-  }
+.article {
+  margin-bottom: 120px;
 }
-a {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.title {
-  grid-area: title;
-}
-.description {
-  grid-area: description;
-}
-.details {
-  grid-area: details;
-}
-.gallery {
-  grid-area: gallery;
-}
-.role {
-  font-size: var(--l);
-}
-.margin {
+h2 {
   margin-bottom: 24px;
 }
-.social__title {
-  margin-top: 24px;
+h2.website {
+  margin-bottom: 8px;
 }
-.social li {
-  margin-top: 8px;
+p.website {
+  margin-bottom: 24px;
 }
-.social a {
-  width: 100%;
-  gap: 8px;
-  font-size: var(--xs);
-  white-space: nowrap;
-  text-overflow: ellipsis;
+p {
+  margin-bottom: 16px;
 }
-.social a svg {
-  flex: 0 0 auto;
+.desktop__input:checked ~ .gallery .desktop__gallery,
+.mobile__input:checked ~ .gallery .mobile__gallery {
+  display: grid;
+}
+.desktop__input:checked ~ .gallery .mobile__gallery,
+.mobile__input:checked ~ .gallery .desktop__gallery {
+  display: none;
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .article {
+    max-width: 60ch;
+    margin: 0 auto 120px;
+  }
+}
+@media screen and (min-width: 901px) {
+  .description {
+    grid-area: 1/2/2/8;
+  }
+  .gallery {
+    grid-area: 1/9/2/12;
+  }
+  .desktop__input:checked ~ .description {
+    min-height: 0;
+    grid-area: 1/2/2/12;
+  }
+  .desktop__input:checked ~ .gallery {
+    grid-area: 2/2/3/12;
+  }
+  .desktop__input:checked ~ .description .left {
+    grid-area: 1/1/2/5;
+  }
+  .desktop__input:checked ~ .description .right {
+    grid-area: 1/5/2/13;
+  }
 }
 .gallery {
-  width: 100%;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
+  display: grid;
+  place-items: center;
 }
-.gallery ul {
+.gallery svg {
+  width: 100%;
+  height: auto;
+  align-items: stretch;
+}
+.gallery__ctrls {
+  grid-area: 2/1/3/2;
   display: flex;
-  gap: 16px;
+  margin-top: 24px;
+  justify-content: center;
 }
-.gallery li {
-  flex: 0 0 calc((100% - 16px) / 2.3);
-  scroll-snap-align: start;
+.gallery__ctrls label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  font-size: var(--s);
+  color: var(--blue);
+  background: white;
+  border: 2px solid var(--blue);
+  transition: var(--ease);
+  cursor: pointer;
 }
-.gallery picture {
-  display: block;
-  aspect-ratio: 1/1;
+.gallery__ctrls label svg {
+  width: 14px;
+  height: auto;
+  margin-right: 8px;
 }
-.gallery picture img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-.description ul {
-  list-style-type: disc !important;
+.desktop__input:checked ~ .gallery .gallery__ctrls .desktop__btn,
+.mobile__input:checked ~ .gallery .gallery__ctrls .mobile__btn {
+  color: var(--white);
+  background: var(--blue);
 }
 </style>
