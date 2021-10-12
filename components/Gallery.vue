@@ -161,6 +161,15 @@ ul svg {
     width: 324px;
     height: 218px;
   }
+  .mobile__gallery ul,
+  .mobile__gallery ul svg {
+    width: 250px;
+    height: 496px;
+  }
+  button {
+    width: 42px;
+    height: 42px;
+  }
 }
 @media (min-width: 601px) and (max-width: 900px) {
   .desktop__gallery ul,
