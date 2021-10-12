@@ -7,18 +7,18 @@
   --l: 18px;
   --ml: 24px;
   --xl: 32px;
-  --xxl: 64px;
+  --xxl: 46px;
   --lineHeight: 1.3;
 
   /* Text colors */
   --black: #0e1325;
   --grey: #555965;
+  --blue: #2d3c74;
 
   /* Other colors */
   --cyan: #1b998b;
   --yellow: #ffd447;
   --red: #f25757;
-  --blue: #4056a6;
   --green: #1d9670;
   --white: #fff;
 

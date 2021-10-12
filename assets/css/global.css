@@ -1,27 +1,28 @@
+html {
+  border: 8px solid var(--blue);
+}
 body {
-  max-width: 70ch;
-  margin: 128px auto;
+  max-width: 1140px;
+  margin: 0 auto;
   padding: 0 2ch;
   font-family: var(--sofiaPro);
   font-size: var(--m);
   line-height: 1.3;
-  color: var(--black);
+  color: var(--blue);
 }
-h1,
+h1 {
+  font-weight: 900;
+  font-size: var(--xxl);
+}
 h2 {
-  margin-bottom: 24px;
   font-weight: 900;
   font-size: var(--xl);
 }
-h2 {
-  margin: 48px 0 16px;
-}
 h3 {
-  font-size: var(--l);
+  font-size: var(--m);
   font-weight: bold;
 }
 h4 {
-  margin-bottom: 4px;
   font-size: var(--s);
 }
 strong {
@@ -29,10 +30,41 @@ strong {
 }
 a {
   color: currentColor;
-  text-decoration: underline var(--grey);
+  text-decoration: underline currentColor 2px;
+  transition: var(--ease);
 }
 @media (hover: hover) {
   a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: var(--white);
+    background: var(--blue);
   }
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  background: white;
+  border: 2px solid var(--blue);
+  text-decoration: none;
+}
+.btn svg {
+  width: 16px;
+  height: auto;
+  margin-right: 8px;
+}
+.btn--inverted {
+  color: var(--white);
+  background: var(--blue);
+}
+@media (hover: hover) {
+  .btn--inverted:hover {
+    color: var(--blue);
+    background: var(--white);
+  }
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

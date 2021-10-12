@@ -1,11 +1,20 @@
-@media screen and (min-width: 601px) {
+@media screen and (max-width: 900px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 901px) {
   .grid {
     position: relative;
     display: grid;
     align-items: flex-start;
     width: 100%;
     margin-top: 24px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(12, 1fr);
     grid-gap: 16px 24px;
   }
   .grid > .full {

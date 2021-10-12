@@ -1,11 +1,9 @@
 <template>
-  <main class="container">
+  <main>
     <Header />
-    <h2>My work</h2>
     <List :articles="works" />
-    <h2>Side Project</h2>
+
     <List :articles="side" />
-    <Footer />
   </main>
 </template>
 
@@ -29,6 +27,5 @@ export default {
   },
 }
 </script>
-
-<style>
+<style scoped>
 </style>
