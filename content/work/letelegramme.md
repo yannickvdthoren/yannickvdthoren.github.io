@@ -5,7 +5,7 @@ title: Le Télégramme
 project: le_telegramme
 role: UI/UX Designer and Full-Stack developer
 description: 'Le Télégramme is a regional newspaper in Brittany'
-mission: "During my time at Le Télégramme I had the opportunity to work on a lot of projects. My main mission was to design and integrating my design in the website.
+mission: "During my time at Le Télégramme I had the opportunity to work on a lot of projects. My mission was to design websites and applications and turn my creations into clean HTML ready to be used by the developers in my team.
 <br />
 <br />Collaborating with a UX agency, I participated in the interviews of users for the new website. On the basis of the UX analysis I then designed new screens, sections and categories for the website. 
 <br />

@@ -5,7 +5,7 @@ title: Coloc Housing
 project: coloc_housing
 role: UI/UX Designer and Full-Stack developer
 description: Coloc Housing manage shared house in Belgium
-mission: 'The website allows people to search and find a shared house in Belgium and then applying in the house. The roomies can then vote for the applicants and, if he is accepted, he can come and live with them in the house.
+mission: 'Folks use our website to search and apply for a shared house in Belgium. The roommates can then vote for the applicants and, if they are accepted, they can come and live in the house.
 <br />
 <br />I led the redesign of the dashboard for the owners and worked closely with the houses managing team for this. I also collaborated with a freelance developper who was in charge of integrating a new chat function. I made UI design based on the feedback from the users.
 <br />
