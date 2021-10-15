@@ -31,7 +31,7 @@
         >.
       </p>
       <div class="buttons">
-        <a href="mailto:yannickvdthoren@gmail.com" class="btn btn--outline">
+        <a href="mailto:hey@yannick.design" class="btn btn--outline">
           <Send /> Send me an email
         </a>
         <a
