@@ -15,8 +15,18 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Showcase of works and side project created and coded by Yannick Vandenthoren.',
+          'Showcase of works and side project designed and coded by Yannick Vandenthoren.',
       },
+      { property: 'og:title', content: "Yannick Vandenthoren's portfolio." },
+      {
+        property: 'og:description',
+        content:
+          'Showcase of works and side project designed and coded by Yannick Vandenthoren.',
+      },
+      { property: 'og:image', content: 'https://yannick.design/og:image.png' },
+      { property: 'og:image:width', content: '1200' },
+      { property: 'og:image:height', content: '630' },
+      { property: 'og:type', content: 'website' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
