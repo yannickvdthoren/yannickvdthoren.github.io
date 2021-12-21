@@ -1,6 +1,11 @@
 <template>
   <ul>
-    <li v-for="article of articles" :key="article.slug" class="grid article">
+    <li
+      v-for="article of articles"
+      :key="article.slug"
+      class="grid article"
+      :id="article.slug"
+    >
       <input
         type="radio"
         :name="'gallery' + article.slug"
