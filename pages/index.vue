@@ -1,31 +1,26 @@
 <template>
   <main>
     <Header />
-    <List :articles="works" />
+    <!-- <List :articles="works" />
 
-    <List :articles="side" />
+    <List :articles="side" /> -->
   </main>
 </template>
 
 <script>
 import Header from '@/components/Header.vue'
-import List from '@/components/List.vue'
-import Footer from '@/components/Footer.vue'
+// import List from '@/components/List.vue'
 export default {
   name: 'index',
   components: {
-    Header,
-    List,
-    Footer,
+    Header
   },
-  async asyncData({ $content, params }) {
-    const works = await $content('work').sortBy('position', 'asc').fetch()
-    const side = await $content('side-project')
-      .sortBy('position', 'asc')
-      .fetch()
-    return { works, side }
-  },
+  // async asyncData({ $content, params }) {
+  //   const works = await $content('work').sortBy('position', 'asc').fetch()
+  //   const side = await $content('side-project')
+  //     .sortBy('position', 'asc')
+  //     .fetch()
+  //   return { works, side }
+  // },
 }
 </script>
-<style scoped>
-</style>
