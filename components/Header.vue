@@ -2,10 +2,10 @@
   <header class="grid">
     <div class="content">
       <h1>Yannick Vandenthoren.</h1>
-      <!-- <ul class="social">
-        <li>
+      <ul class="social">
+        <!-- <li>
           <a href="https://twitter.com/yannickvdthoren"><Twitter /></a>
-        </li>
+        </li> -->
         <li>
           <a href="https://www.linkedin.com/in/yannickvdthoren/"
             ><Linkedin
@@ -20,15 +20,15 @@
         <li>
           <a href="https://www.instagram.com/yannickvdthoren/"><Instagram /></a>
         </li>
-      </ul> -->
-      <p>
+      </ul>
+      <!-- <p>
         I'm not working as a Product Designer anymore. I'm in the process of launching a new project that will be done in the real world with real people. You can follow my journey on 
         <a href="https://www.linkedin.com/in/yannickvdthoren/">LinkedIn</a>.
       </p>
       <p>
         P.S: Feel free to connect!
-      </p>
-      <!-- <p>
+      </p> -->
+      <p>
         I’m a passionate <strong>Product Designer</strong> and
         <strong>Full Stack Developer</strong> adept at unlocking the full
         potential of my clients - often in dire need of a great design, a solid
@@ -36,8 +36,8 @@
         <a href="https://www.linkedin.com/in/yannickvdthoren/"
           >what they say about my work</a
         >.
-      </p> -->
-      <!-- <div class="buttons">
+      </p>
+      <div class="buttons">
         <a href="mailto:hey@yannick.design" class="btn btn--outline">
           <Send /> Send me an email
         </a>
@@ -48,7 +48,7 @@
         >
           <Download /> Download my resume
         </a>
-      </div> -->
+      </div>
     </div>
   </header>
 </template>

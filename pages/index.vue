@@ -1,9 +1,9 @@
 <template>
   <main>
     <Header />
-    <!-- <List :articles="works" />
+    <List :articles="works" />
 
-    <List :articles="side" /> -->
+    <List :articles="side" />
   </main>
 </template>
 
