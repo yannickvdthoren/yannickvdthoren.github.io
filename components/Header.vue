@@ -38,9 +38,9 @@
         >.
       </p>
       <div class="buttons">
-        <a href="mailto:hey@yannick.design" class="btn btn--outline">
+        <!-- <a href="mailto:hey@yannick.design" class="btn btn--outline">
           <Send /> Send me an email
-        </a>
+        </a> -->
         <a
           href="/2021-Yannick-Vandenthoren-resume.pdf"
           class="btn btn--inverted"
