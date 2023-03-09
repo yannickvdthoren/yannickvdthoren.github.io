@@ -18,7 +18,7 @@
           <a href="https://dribbble.com/yannickvdthoren"><Dribbble /></a>
         </li>
         <li>
-          <a href="https://www.instagram.com/yannickvdthoren/"><Instagram /></a>
+          <a href="https://www.instagram.com/littlejohntower/"><Instagram /></a>
         </li>
       </ul>
       <!-- <p>
