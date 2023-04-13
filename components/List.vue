@@ -21,6 +21,15 @@
         class="desktop__input"
         hidden
       />
+      <input
+        type="radio"
+        :name="'gallery' + article.slug"
+        :id="'des' + article.slug"
+        class="desktop__input"
+        checked
+        hidden
+        v-if="!article.mobile && article.desktop"
+      />
 
       <div class="description">
         <div class="left">

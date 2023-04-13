@@ -1,5 +1,5 @@
 ---
-position: 1
+position: 3
 suptitle: Apr 2015 - Jan 2016 <br />& Apr 2019 - Dec 2020
 title: Le Télégramme
 project: le_telegramme
