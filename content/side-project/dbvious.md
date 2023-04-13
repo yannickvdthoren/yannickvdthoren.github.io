@@ -18,21 +18,18 @@ desktop: [
     urlx2: /dbvious/db2-min.png,
     alt: 'Creating a new database',
   },
-  ,
   {
     id: 2,
     url: /dbvious/db3-min.png,
     urlx2: /dbvious/db3-min.png,
     alt: 'View of the table in the database',
   },
-  ,
   {
     id: 3,
     url: /dbvious/db4-min.png,
     urlx2: /dbvious/db4-min.png,
     alt: 'Linking two table together',
   },
-  ,
   {
     id: 4,
     url: /dbvious/db5-min.png,

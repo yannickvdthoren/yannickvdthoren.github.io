@@ -54,5 +54,5 @@ desktop: [
     alt: 'Tracking page with all the steps in which your order is currently in',
   }
 ]
-color: blue
+color: yellow
 ---
