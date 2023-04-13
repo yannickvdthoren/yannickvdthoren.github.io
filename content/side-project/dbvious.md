@@ -5,7 +5,7 @@ project: dbvious
 description: 'DBVious is a design challenge to create a database architecture easily'
 mission: 'While I was learning to create databases, I wanted to have an easier and cleaner way of seeing the database I was creating and which items were linked together.'
 social: false
-mobile: [
+desktop: [
   {
     id: 0,
     url: /dbvious/db-1.jpg,
