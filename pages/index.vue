@@ -13,10 +13,10 @@ import List from '@/components/List.vue'
 export default {
   name: 'index',
   components: {
-    Header
+    Header,
   },
   async asyncData({ $content, params }) {
-    const works = await $content('work').sortBy('position', 'asc').fetch()
+    const works = await $content('work').sortBy('position', 'desc').fetch()
     const side = await $content('side-project')
       .sortBy('position', 'asc')
       .fetch()

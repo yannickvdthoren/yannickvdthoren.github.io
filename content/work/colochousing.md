@@ -1,5 +1,5 @@
 ---
-position: 2
+position: 1
 suptitle: Oct 2018 - Oct 2019 <br /> & Jan 2021 - Oct 2021 
 title: Coloc Housing
 project: coloc_housing

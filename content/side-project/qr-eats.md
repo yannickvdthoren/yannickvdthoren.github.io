@@ -1,5 +1,6 @@
 ---
 position: 0
+suptitle: "Side Project"
 title: QR Eats
 project: qr_eats
 description: 'QR Eats is a QR code link to the menu of a restaurant'
