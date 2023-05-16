@@ -38,14 +38,10 @@
         >.
       </p>
       <div class="buttons">
-        <a href="mailto:yannickvdthoren@gmail.com" class="btn btn--outline">
+        <a href="mailto:hey@littlejohntower.com" class="btn btn--outline">
           <Send /> Send me an email
         </a>
-        <a
-          href="/2021-Yannick-Vandenthoren-resume.pdf"
-          class="btn btn--inverted"
-          download
-        >
+        <a href="/Yannick-Vandenthoren.pdf" class="btn btn--inverted" download>
           <Download /> Download my resume
         </a>
       </div>
